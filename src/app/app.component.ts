@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Plugins } from '@capacitor/core';
 
+const { Geolocation } = Plugins;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,4 +10,12 @@ import { Plugins } from '@capacitor/core';
 })
 export class AppComponent {
   title = 'IonicMeteo';
+  data =  {};
+  
+  async getCurrentPosition() {
+    const coordinates = await Geolocation.getCurrentPosition();
+    console.log('Curret', coordinates);
+    this.data = {lat : coordinates.coords.latitude, long: coordinates.coords.longitude}
+  }
+
 }
