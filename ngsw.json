@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1593736019985,
+  "timestamp": 1593736821888,
   "index": "/IonicMeteo/index.html",
   "assetGroups": [
     {
@@ -402,7 +402,7 @@
     "/IonicMeteo/index.html": "72c9e61f4b35fc65b9288912f7acb9a57ef14c3f",
     "/IonicMeteo/main-es2015.a80c86f505ff8b33fa08.js": "e4ff92da81b1af66910205e647ebe6952fd22c9d",
     "/IonicMeteo/main-es5.a80c86f505ff8b33fa08.js": "32f7c72cf8cbdc84ab2e7b0b1d579c8e13a9d2b6",
-    "/IonicMeteo/manifest.webmanifest": "cc8ca5d4c02fceb083621ceb2055b6edc7cf2d7d",
+    "/IonicMeteo/manifest.webmanifest": "28beaf2de2e4899146be5fed8acb1a8508d9e48d",
     "/IonicMeteo/polyfills-core-js-es2015.ce47e0beaa8754f121dc.js": "fe18301772fedd9faed9155d0253b25bad547329",
     "/IonicMeteo/polyfills-core-js-es5.ce47e0beaa8754f121dc.js": "2238555b018c094b6a5445b2ea64d26959264b3a",
     "/IonicMeteo/polyfills-css-shim-es2015.05b8c6a8a2ea3011751f.js": "021961b150efc29aacb8b30b2b64628e840ddae4",
