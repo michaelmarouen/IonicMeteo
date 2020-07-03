@@ -1,0 +1,40 @@
+<ion-content class="ion-text-center">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card-subtitle color="light"> {{dateduJour}}</ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+      <ion-row >
+        <ion-col>
+          <ion-img style="height:200px;" [src]="icon"></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-margin-bottom">
+        <ion-col>
+          <ion-text color="light" style="font-size: 75px;">
+            {{temperature}}°
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-padding-top ion-margin-bottom">
+        <ion-col>
+          <ion-text color="light" style="font-size: 45px;">
+            {{location}}
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-text color="dark">
+            <p>
+              Temp max:{{max}}°C<br />
+              Temp min:{{min}}°C<br />
+              Pressure{{presure}}<br />
+              Humdity: {{humidity}}<br />
+            </p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
