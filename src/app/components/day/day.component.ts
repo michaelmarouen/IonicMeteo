@@ -23,23 +23,18 @@ export class DayComponent implements OnInit {
   dateduJour;
 
   constructor(private owm: OWMService){}
-  
 
   async ngOnInit() {
     const coordinates = await this.getCurrentPosition();
-    const meteo = await this.getMeteo(coordinates);
+    await this.getMeteo(coordinates);
   }
   async getCurrentPosition() {
      return await Geolocation.getCurrentPosition();    
   }
 
   async getMeteo(coordinates){
-    const temps :any = await this.owm.getMeteo(coordinates.coords.latitude,coordinates.coords.longitude);   
-    const tempsWeek :any = await this.owm.getMeteoWeek(coordinates.coords.latitude,coordinates.coords.longitude);       
-    console.log(tempsWeek);
-    
-    this.data = temps;
-    
+    const temps :any = await this.owm.getMeteo(coordinates.coords.latitude,coordinates.coords.longitude);       
+    this.data = temps;    
     this.icon = await `http://openweathermap.org/img/wn/${temps.weather[0].icon}@2x.png`
     const theDate= new Date();
     this.dateduJour = theDate.getDate()+"/"+theDate.getMonth()+"/"+theDate.getFullYear()

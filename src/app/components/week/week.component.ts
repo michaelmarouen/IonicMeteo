@@ -27,7 +27,7 @@ export class WeekComponent implements OnInit {
 
   async ngOnInit() {
     const coordinates = await this.getCurrentPosition();
-    const meteo = await this.getMeteoWeek(coordinates);
+    await this.getMeteoWeek(coordinates);
   }
   async getCurrentPosition() {
      return await Geolocation.getCurrentPosition();    
