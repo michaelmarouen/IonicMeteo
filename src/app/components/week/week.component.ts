@@ -12,7 +12,7 @@ const { Geolocation } = Plugins;
 })
 export class WeekComponent implements OnInit {
   title = 'IonicMeteo';
-  data =  {};
+  data;
   icon : string;
   temperature : number ;
   location : string;
@@ -21,7 +21,10 @@ export class WeekComponent implements OnInit {
   presure: number ;
   humidity: number;
   dateduJour;
-
+  slideOpts = {
+    initialSlide: 1,
+    speed: 400
+  };
   constructor(private owm: OWMService){}
   
 
@@ -35,18 +38,15 @@ export class WeekComponent implements OnInit {
 
   async getMeteoWeek(coordinates){    
     const tempsWeek :any = await this.owm.getMeteoWeek(coordinates.coords.latitude,coordinates.coords.longitude);       
-    console.log(tempsWeek);
-    this.data = tempsWeek;
-    
-    this.icon = await `http://openweathermap.org/img/wn/${tempsWeek.weather[0].icon}@2x.png`
+    console.log(tempsWeek);    
+    const [...data] =tempsWeek.daily;
+    this.data = data;
+    console.log(this.data);    
+    //this.icon = await `http://openweathermap.org/img/wn/${tempsWeek.weather[0].icon}@2x.png`
+    this.icon ='';
     const theDate= new Date();
     this.dateduJour = theDate.getDate()+"/"+theDate.getMonth()+"/"+theDate.getFullYear()
-    this.temperature = tempsWeek.main.temp;
-    this.location = tempsWeek.name;
-    this.min = tempsWeek.main.temp_min;
-    this.max = tempsWeek.main.temp_max;
-    this.presure = tempsWeek.main.pressure;
-    this.humidity = tempsWeek.main.humidity;
+ 
 
   }  
 }
