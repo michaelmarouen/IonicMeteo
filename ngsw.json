@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1593741088290,
+  "timestamp": 1593828438281,
   "index": "/IonicMeteo/index.html",
   "assetGroups": [
     {
@@ -182,8 +182,8 @@
         "/IonicMeteo/common-es5.787fed6c88942b571d48.js",
         "/IonicMeteo/favicon.ico",
         "/IonicMeteo/index.html",
-        "/IonicMeteo/main-es2015.eaa6c30b0756b68a0349.js",
-        "/IonicMeteo/main-es5.eaa6c30b0756b68a0349.js",
+        "/IonicMeteo/main-es2015.97abbb78a1bdf6a2f723.js",
+        "/IonicMeteo/main-es5.97abbb78a1bdf6a2f723.js",
         "/IonicMeteo/manifest.webmanifest",
         "/IonicMeteo/polyfills-core-js-es2015.ce47e0beaa8754f121dc.js",
         "/IonicMeteo/polyfills-core-js-es5.ce47e0beaa8754f121dc.js",
@@ -399,9 +399,9 @@
     "/IonicMeteo/common-es2015.787fed6c88942b571d48.js": "2634c6f1e6055c8b0aa4f38c54faea50c26a352c",
     "/IonicMeteo/common-es5.787fed6c88942b571d48.js": "4f16208880f1e36208abbe684c332346fa3d5599",
     "/IonicMeteo/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/IonicMeteo/index.html": "ebe38f8a001a3d449f791836ad631bf966d75fe3",
-    "/IonicMeteo/main-es2015.eaa6c30b0756b68a0349.js": "e210f7ef4f8092b37a558d2f216d18d2155ae042",
-    "/IonicMeteo/main-es5.eaa6c30b0756b68a0349.js": "6fa7b3f8c0171805bf28e50d8543be6c9ac31100",
+    "/IonicMeteo/index.html": "542f9b5179fa88bb29dd7cabc6997a1f894fcb23",
+    "/IonicMeteo/main-es2015.97abbb78a1bdf6a2f723.js": "c0a30ec22e8b0455f4d589908d9796cde85c4c99",
+    "/IonicMeteo/main-es5.97abbb78a1bdf6a2f723.js": "27441fffc25e72837742f97772c99f7b469dad9d",
     "/IonicMeteo/manifest.webmanifest": "28beaf2de2e4899146be5fed8acb1a8508d9e48d",
     "/IonicMeteo/polyfills-core-js-es2015.ce47e0beaa8754f121dc.js": "fe18301772fedd9faed9155d0253b25bad547329",
     "/IonicMeteo/polyfills-core-js-es5.ce47e0beaa8754f121dc.js": "2238555b018c094b6a5445b2ea64d26959264b3a",
